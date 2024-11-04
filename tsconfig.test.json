@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["vitest/globals"], // Include Vitest types
+    "jsx": "react-jsx", // Ensure JSX is handled correctly for React
+    "module": "esnext", // Use ESNext module resolution
+    "target": "esnext", // Target the latest ECMAScript version
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Enable interop between CommonJS and ES modules
+    "skipLibCheck": true // Skip type checking of declaration files
+  },
+  "include": ["src/**/*", "tests/**/*"], // Include both your src and test directories
+  "exclude": ["node_modules"]
+}
